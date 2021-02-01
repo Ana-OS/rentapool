@@ -3,7 +3,7 @@
   <div class="flex-container-trait mb-5">
     <div class="container-trait-description mt-5">
       <div>
-        <p><%= @pool.description %></p>
+        <p><%= truncate(@pool.description, length: 100, separator: ' ')%></p>
         <p><%= @pool.price_hour %>€ p/day</p>
         <p><%= @pool.address %></p>
       </div>
@@ -22,7 +22,7 @@
   </div>
 </div>
   <div class="container col-12" style="background-color:#F3FBFC">
-    <div class="container-fluid col-7 mt-5">
+    <div class="container-fluid col-7">
       <h2>Check other pools</h2>
       <div class="row mx-auto mt-5">
         <% @pools.sample(3).each do |pool| %>
