@@ -1,0 +1,191 @@
+.trait_user_container{
+  position:relative;
+  top:10px;
+  width:1150px;
+  height:520px;
+  margin:0 auto;
+  border-top: 0.4px solid rgba(0, 0, 0, 0.25);
+  border-right: 0.4px solid rgba(0, 0, 0, 0.25);
+  border-left: 0.4px solid rgba(0, 0, 0, 0.25);
+  border-radius: 11px 11px 11px 0;
+  overflow:hidden;
+}
+.cards{
+  margin-top:-420px;
+  margin-left:150px;
+  justify-content:space-between;
+}
+.card_user_trait {
+  position:relative;
+  overflow: hidden;
+  height: 180px;
+  background: white;
+  box-shadow: 0 0 7px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  width:580px;
+  border-radius:10px;
+}
+
+.card_user_trait img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card_user_trait h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: -20px;
+}
+
+.card_user_trait p {
+  font-size: 12px;
+  line-height: 1;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card_user_trait .card_user_trait_infos {
+  margin-top:-20px;
+  margin-left:20px;
+  padding: 16px;
+  width:400px;
+  text-align: justify;
+  text-justify: inter-word;
+
+  .trait_description{
+    font-size:13px;
+    width:450px;
+    text-align: justify;
+    text-justify: inter-word;
+    letter-spacing:-.7px;
+    margin-left:-30px;
+  }
+}
+
+.trait_btns{
+  position:absolute;
+  margin-left:-60px;
+  bottom:10px;
+}
+
+.back_yellow_btn{
+  border: 2px solid #F9CF59;
+  width: 70px;
+  height: 29px;
+  margin-top:10px;
+  border-radius: 5px;
+  text-align:center;
+}
+
+.back_yellow_btn a{
+  color: #F9CF59;
+  text-decoration:none;
+}
+
+.back_yellow_btn a:hover{
+  color: #F9CF59;
+  text-decoration:none;
+}
+
+.edit_green_btn{
+  border: 2px solid #5C9468;
+  width: 70px;
+  height: 29px;
+  margin-top:10px;
+  border-radius: 5px;
+  text-align:center;
+}
+
+.edit_green_btn a{
+  color:#5C9468 ;
+  text-decoration:none;
+}
+.edit_green_btn a:hover{
+  color:#5C9468 ;
+  text-decoration:none;
+}
+
+.delete_coral_btn{
+  border: 2px solid #F89D77;
+  width: 70px;
+  height: 29px;
+  margin-top:10px;
+  margin-left:10px;
+  border-radius: 5px;
+  text-align:center;
+}
+
+.delete_coral_btn a{
+  color:#F89D77;
+  text-decoration:none ;
+}
+
+.delete_coral_btn a:hover{
+  color:#F89D77;
+  text-decoration:none ;
+}
+
+
+.rec_yellow{
+  position: absolute;
+  width: 493.73px;
+  height: 140.62px;
+  left: 879.47px;
+  top: 113.41px;
+  background:#FBCC49;
+  mix-blend-mode: normal;
+  border-radius: 150px;
+  transform: matrix(0.81, 0.6, -0.58, 0.81, 0, 0);
+}
+
+.rec_pink{
+  position: absolute;
+  width: 493.73px;
+  height: 140.62px;
+  left: 779.47px;
+  top: 212.41px;
+  background: #F9B9D3;
+  mix-blend-mode: normal;
+  border-radius: 150px;
+  transform: matrix(0.81, 0.6, -0.58, 0.81, 0, 0);
+}
+
+.rec_green{
+  position: absolute;
+  width: 899.73px;
+  height: 140.62px;
+  left: 503.47px;
+  top: 330.41px;
+  background: #5C9468;
+  mix-blend-mode: normal;
+  border-radius: 150px;
+  transform: matrix(0.81, 0.6, -0.58, 0.81, 0, 0);
+}
+
+.circle_black{
+  position: absolute;
+  width: 140.62px;
+  height: 140.62px;
+  left: 564.16px;
+  top: 269.99px;
+  background: #363334;
+  mix-blend-mode: normal;
+  border-radius: 150px;
+  transform: matrix(0.81, 0.6, -0.58, 0.81, 0, 0);
+}
+
+.rec_black{
+  position: absolute;
+  width: 385.62px;
+  height: 140.62px;
+  left: 749.27px;
+  top: 496px;
+  background: #363334;
+  mix-blend-mode: normal;
+  border-radius: 150px;
+  transform: matrix(0.81, 0.6, -0.58, 0.81, 0, 0);
+}
+

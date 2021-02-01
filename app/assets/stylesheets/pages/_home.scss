@@ -1,1 +1,192 @@
 // Specific CSS for your home-page
+.flatpickr {
+  background-color: white !important;
+}
+.home {
+  margin-top: -30px;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height:100vh;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 62px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 40px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.banner .cta{
+  background: rgba(248, 248, 248, 0.4);
+  border: 2px solid lightblue;
+  border-radius:50%;
+  display:inline-block;
+  width:150px;
+  border-radius: 11px;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding:6px 20px;
+
+ a{
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-decoration:none;
+  }
+}
+
+.banner .cta:hover{
+  background: rgba(200, 248, 248, 0.4);
+  border: 2px solid lightblue;
+}
+// --- SHOW ALL POOLS ---
+.wrapper-pools{
+  width:100%;
+}
+
+
+.card-product {
+  overflow: hidden;
+  height: 200px;
+  width:650px;
+  background: white;
+  border-radius:20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.card-product img {
+  height: 100%;
+  width: 300px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+.card-product p .price{
+  font-weight:bold;
+}
+.card-product .card-product-infos {
+  padding: 16px;
+}
+.card-product-infos a {
+  text-decoration: none !important;
+}
+//
+.card a{
+  color:grey;
+  text-decoration: none !important;
+}
+
+
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+
+.product-search {
+    display: flex;
+    width:500px;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+    margin: 0 auto;
+    opacity: .9;
+    cursor: pointer;
+}
+
+.search-element {
+    display: flex;
+    flex-grow: 2;
+    outline:none;
+    flex-direction: column;
+    padding: 0 1em;
+
+    input{
+      border:none !important;
+    }
+}
+
+.search-button {
+    display: inline-block;
+    flex-grow: 1;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 1em;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 100;
+    border: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    background-color: #5CA08B;
+    transition: background-color 0.8s ease;
+}
+
+

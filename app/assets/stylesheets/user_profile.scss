@@ -1,0 +1,53 @@
+.user{
+  position:relative;
+  top:10px;
+  margin:0 auto;
+  border: 0.4px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 4px 0.1px rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  overflow:hidden;
+}
+
+.user_info{
+  margin-left:90px;
+  margin-top:30px;
+
+  p{
+    color:#808080;
+    font-size:18px;
+    font-weight:300;
+    font-family:Roboto;
+  }
+}
+
+h1{
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.info{
+  border-bottom:1px solid lightgrey;
+  width:400px;
+  font-size:24px;
+  color:#1C0C1B;
+}
+
+.btn.btn-outline-dark a{
+  color: black;
+}
+
+.btn a{
+  color:#006994;
+}
+
+.btn a:hover{
+  text-decoration:none;
+  color:white;
+}
+
+
+

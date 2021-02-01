@@ -1,20 +1,29 @@
-<h2>Log in</h2>
+<div class="container login col-12" style="height:100vh; ; background-image:url(https://res.cloudinary.com/dhjbcdzxb/image/upload/v1611943279/backpool_drujlt.jpg);">
+  <div class="big-container-login col-6">
+    <div class="login-container col-8 mx-auto">
+      <div class="login-header">
+        <h2 class="login-text">Log in</h2>
+      </div>
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :email,
-                required: false,
-                autofocus: true,
-                input_html: { autocomplete: "email" } %>
-    <%= f.input :password,
-                required: false,
-                input_html: { autocomplete: "current-password" } %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+      <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="form-inputs">
+          <%= f.input :email,
+                      required: false,
+                      autofocus: true,
+                      input_html: { autocomplete: "email" } %>
+          <%= f.input :password,
+                      required: false,
+                      input_html: { autocomplete: "current-password" } %>
+          <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+        </div>
+
+        <div class="form-actions login">
+          <p class="login-btn"><%= f.button :submit, "Log in" %></p>
+        </div>
+      <% end %>
+      <div class="signup-action">
+      <p class="signup-already">No account yet?<span class="signup-link"><%= render "devise/shared/links" %>
+      </div>
+    </div>
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>

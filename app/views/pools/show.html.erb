@@ -1,0 +1,46 @@
+<div class="container">
+  <h1><%= @pool.name %> <span>by <%= @user.first_name %></span></h1>
+  <div class="flex-container-trait mb-5">
+    <div class="container-trait-description mt-5">
+      <div>
+        <p><%= @pool.description %></p>
+        <p><%= @pool.price_hour %>€ p/day</p>
+        <p><%= @pool.address %></p>
+      </div>
+      <div class="book-trait-button">
+        <button type="button" class="btn book-trait btn-lg">
+          <%= link_to "Book this pool", new_pool_booking_path(@pool) %>
+        </button>
+      </div>
+    <!-- link to edit , delete, back to traits list -->
+    </div>
+       <% if @pool.photo.attached? %>
+        <div class="traits-image mt-5">
+          <%= cl_image_tag @pool.photo.key, height: 300, width: 400, crop: :fill %>
+        </div>
+      <% end %>
+  </div>
+</div>
+  <div class="container col-12" style="background-color:#F3FBFC">
+    <div class="container-fluid col-7 mt-5">
+      <h2>Check other pools</h2>
+      <div class="row mx-auto mt-5">
+        <% @pools.sample(3).each do |pool| %>
+          <% if pool.photo.attached? %>
+            <div class="card ml-1" style="width: 15rem;">
+               <%= link_to pool_path(pool) do %>
+                <img class="card-img-top" style="height:200px;"src="<%= cl_image_path pool.photo.key%>">
+                <div class="card-body mt-3">
+                  <h5><%= pool.name%></h5>
+                  <p class="card-text"><%= pool.address %><span class="ml-5 mt-3"><%= pool.price_hour %> p/day €</span></p>
+                </div>
+              <% end %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+
+

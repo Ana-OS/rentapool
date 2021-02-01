@@ -1,2 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<body class="home">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dhjbcdzxb/image/upload/v1611606710/unsplashpool2_z7foy8.jpg);">
+    <div class="container text-center" style="margin-top:-120px">
+      <p class="text mb-5">Swimming Pools to Rent Worldwide<p>
+      <%= render 'landing_form' %>
+      <div class="cta"><%= link_to "Dive in", pools_path%></div>
+    </div>
+  </div>
+</body>

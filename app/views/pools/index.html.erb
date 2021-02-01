@@ -1,0 +1,31 @@
+<div class="container col-12 ml-2 d-flex wrapper-pools" style="background-color:#F3FBFC">
+  <div class="col-6">
+    <% if @pools.count > 1 %>
+      <% @pools.each do |pool| %>
+        <% if pool.photo.attached? %>
+          <div class="card-product mb-3">
+            <%= link_to pool_path(pool) do %>
+              <img src="<%= cl_image_path pool.photo.key %>"/>
+              <div class="card-product-infos">
+              <%end%>
+              <h2><%=link_to pool.name, pool_path(pool) %></h2>
+              <p class="mt-4"><%= truncate(pool.description, length: 47, separator: ' ') %></p>
+              <p class="mt-2"><%= truncate(pool.address) %></p>
+              <p class="mt-5"><span class="price"><%= pool.price_hour %>€ p/day</span></p>
+              </div>
+          </div>
+        <% end %>
+      <% end %>
+    <% else %>
+      <p>Sorry 🥺 no pools were found</p>
+    <% end %>
+  </div>
+  <div id="map"
+     style="width: 100%; height: 90vh";
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+   </div>
+</div>
+
+
+

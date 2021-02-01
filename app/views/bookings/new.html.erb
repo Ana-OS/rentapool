@@ -1,0 +1,25 @@
+<div class="container col-4 mt-5">
+  <div class="reservation-card">
+    <div class="reservation-title">
+      <h1>Book your Pool</h1>
+    </div>
+    <%= simple_form_for [@pool, @booking] do |f| %>
+    <div class="booking-inputs">
+      <div class="booking-start-date">
+        <%= f.input :start_date, as: :date, html5: true %>
+      </div>
+      <div class="booking-end-date">
+      <%= f.input :end_date, as: :date, html5: true %>
+      </div>
+    </div>
+    <div class="booking-button">
+      <%= f.button :submit, class: 'new-reservation-btn', value: "Confirm Booking" %>
+    </div>
+    <%end %>
+    <div class="booking-cancel">
+      <%= link_to "Cancel", pools_path, class: 'cancel-new-reservation' %>
+    </div>
+
+  </div>
+
+</div>

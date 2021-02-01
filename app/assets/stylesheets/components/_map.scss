@@ -1,0 +1,22 @@
+.mapboxgl-ctrl-top-right {
+  position: relative;
+  border-radius: 50px;
+}
+
+.mapboxgl-ctrl-top-right .mapboxgl-ctrl {
+  float: none;
+}
+
+.mapboxgl-popup-close-button{
+  display:none;
+}
+
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
