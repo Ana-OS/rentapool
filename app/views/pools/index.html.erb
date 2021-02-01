@@ -1,6 +1,6 @@
 <div class="container col-12 ml-2 d-flex wrapper-pools" style="background-color:#F3FBFC">
   <div class="col-6">
-    <% if @pools.count > 1 %>
+    <% if @pools.count >= 1 %>
       <% @pools.each do |pool| %>
         <% if pool.photo.attached? %>
           <div class="card-product mb-3">
