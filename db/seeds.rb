@@ -33,7 +33,7 @@ pool = Pool.create!(name: "Backyard Pool", description: "Nam id sollicitudin mi.
 pool1 = Pool.create!(name: "Infinity Pool", description: "Nam id sollicitudin mi. Nulla dictum tristique commodo. In hac habitasse platea dictumst.", address: "Avenida dos Aliados, Porto", rating: 5, price_hour: 15, user: user1)
 pool2 = Pool.create!(name: "Natural Pool", description: "Nam id sollicitudin mi. Nulla dictum tristique commodo. In hac habitasse platea dictumst.",  address: "Wyndham Road, London", rating: 3, price_hour: 20, user: user2)
 pool3 = Pool.create!(name: "Indoor Pool", description: "Nam id sollicitudin mi. Nulla dictum tristique commodo. In hac habitasse platea dictumst.",  address: "Boulevard St. Germain, Paris", rating: 4, price_hour: 25, user: user3)
-pool4 = Pool.create!(name: "Transparent Pool", description: "Nam id sollicitudin mi. Nulla dictum tristique commodo. In hac habitasse platea dictumst.", address: "Tenessee Avenue, Los Angeles", rating: 5, price_hour: 30, user: user4, photo: "https://res.cloudinary.com/dhjbcdzxb/image/upload/v1611666638/Pool2_pravkf.jpg'")
+pool4 = Pool.create!(name: "Transparent Pool", description: "Nam id sollicitudin mi. Nulla dictum tristique commodo. In hac habitasse platea dictumst.", address: "Tenessee Avenue, Los Angeles", rating: 5, price_hour: 30, user: user4, photo: "https://res.cloudinary.com/dhjbcdzxb/image/upload/v1611666638/Pool2_pravkf.jpg")
 
 puts "pools created"
 
@@ -41,20 +41,28 @@ puts "adding photos"
 
 # file1 = File.open() - use for local file
 
-file = URI.open('https://res.cloudinary.com/dhjbcdzxb/image/upload/v1611666638/Pool2_pravkf.jpg')
-pool.photo.attach(io: file, filename: 'filename.png', content_type: 'image/png')
+backyard_pool = Pool.find_by(name:'Backyard Pool')
+backyard_pool.photo_url = 'https://res.cloudinary.com/dhjbcdzxb/image/upload/v1611666638/Pool2_pravkf.jpg'
+backyard_pool.save
 
-file = URI.open('https://res.cloudinary.com/dhjbcdzxb/image/upload/v1611666531/infinitypool_uowfhx.jpg')
-pool1.photo.attach(io: file, filename: 'filename.png', content_type: 'image/png')
+infinity_pool = Pool.find_by(name: 'Infinity Pool')
+infinity_pool.photo_url = 'https://res.cloudinary.com/dhjbcdzxb/image/upload/v1611666531/infinitypool_uowfhx.jpg'
+infinity_pool.save
 
-file = URI.open('https://res.cloudinary.com/dhjbcdzxb/image/upload/v1611666504/naturalpool_so6rsf.jpg')
-pool2.photo.attach(io: file, filename: 'filename.png', content_type: 'image/png')
 
-file = URI.open('https://res.cloudinary.com/dhjbcdzxb/image/upload/v1611666477/indoorpool_bwpody.jpg')
-pool3.photo.attach(io: file, filename: 'filename.png', content_type: 'image/png')
+natural_pool = Pool.find_by(name: "Natural Pool")
+natural_pool.photo_url = 'https://res.cloudinary.com/dhjbcdzxb/image/upload/v1611666504/naturalpool_so6rsf.jpg'
+natural_pool.save
 
-file = URI.open('https://res.cloudinary.com/dhjbcdzxb/image/upload/v1611666468/transparentpool_oltcqc.jpg')
-pool4.photo.attach(io: file, filename: 'filename.png', content_type: 'image/png')
+indoor_pool = Pool.find_by(name: "Indoor Pool")
+indoor_pool.photo_url = 'https://res.cloudinary.com/dhjbcdzxb/image/upload/v1611666477/indoorpool_bwpody.jpg'
+indoor_pool.photo_url = 'https://res.cloudinary.com/dhjbcdzxb/image/upload/v1611666477/indoorpool_bwpody.jpg'
+indoor_pool.save
+
+transparent_pool = Pool.find_by(name: "Transparent Pool")
+transparent_pool.photo_url = 'https://res.cloudinary.com/dhjbcdzxb/image/upload/v1611666468/transparentpool_oltcqc.jpg'
+transparent_pool.save
+
 
 
 
