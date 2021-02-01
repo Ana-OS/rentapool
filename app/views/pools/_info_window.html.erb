@@ -1,4 +1,6 @@
-<h2 class="text-center"><%= pool.name %></h2>
-<%= link_to pool_path(pool)  do %>
-<div><%= cl_image_tag pool.photo.key, height: 200, width: 200, class: "mt-2" %></div>
+<% if pool.photo.attached? %>
+  <h2 class="text-center"><%= pool.name %></h2>
+  <%= link_to pool_path(pool)  do %>
+  <div><%= cl_image_tag pool.photo.key, height: 200, width: 200, class: "mt-2" %></div>
+  <% end %>
 <% end %>
