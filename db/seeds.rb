@@ -33,7 +33,7 @@ pool = Pool.create!(name: "Backyard Pool", description: "Nam id sollicitudin mi.
 pool1 = Pool.create!(name: "Infinity Pool", description: "Nam id sollicitudin mi. Nulla dictum tristique commodo. In hac habitasse platea dictumst.", address: "Avenida dos Aliados, Porto", rating: 5, price_hour: 15, user: user1)
 pool2 = Pool.create!(name: "Natural Pool", description: "Nam id sollicitudin mi. Nulla dictum tristique commodo. In hac habitasse platea dictumst.",  address: "Wyndham Road, London", rating: 3, price_hour: 20, user: user2)
 pool3 = Pool.create!(name: "Indoor Pool", description: "Nam id sollicitudin mi. Nulla dictum tristique commodo. In hac habitasse platea dictumst.",  address: "Boulevard St. Germain, Paris", rating: 4, price_hour: 25, user: user3)
-pool4 = Pool.create!(name: "Transparent Pool", description: "Nam id sollicitudin mi. Nulla dictum tristique commodo. In hac habitasse platea dictumst.", address: "16 Villa Gaudelet, Paris", rating: 5, price_hour: 30, user: user4)
+pool4 = Pool.create!(name: "Transparent Pool", description: "Nam id sollicitudin mi. Nulla dictum tristique commodo. In hac habitasse platea dictumst.", address: "Tenessee Avenue, Los Angeles", rating: 5, price_hour: 30, user: user4)
 
 puts "pools created"
 
