@@ -1,4 +1,4 @@
 meta_product_name: "RentaPool"
 meta_title: "RentaPool - Pools to rent worldwide"
 meta_description: "Discover unique swimming pools all over the world "
-meta_image: "cover.png" # should exist in `app/assets/images/`
+meta_image: "cover_image.png" # should exist in `app/assets/images/`
