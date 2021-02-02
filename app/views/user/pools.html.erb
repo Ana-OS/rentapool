@@ -1,4 +1,4 @@
-<div class="trait_user_container" style="background-color:#F3FBFC; height:100vh">
+<div class="trait_user_container" style="background-color:#F3FBFC; height:auto">
   <div class="back-button-index mt-3 ml-3">
     <%= link_to :back do %>
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -21,7 +21,7 @@
           <%end%>
             <h2><%=link_to pool.name, pool_path(pool) %></h2>
             <p class="mt-2"><%= truncate(pool.description, length: 47, separator: ' ') %></p>
-            <p class="mt-4"><%= pool.address %></p>
+            <p class="mt-1"><%= pool.address %></p>
             <p class="mt-5"><span class="price"><%= pool.price_hour %>€ p/hour</span></p>
             <div class="d-flex ml-3">
               <div class="edit_green_btn ml-5">
