@@ -71,5 +71,68 @@
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   }
+
+
+  .card-img-top{
+    width:17rem;
+    margin-left:-60px;
+  }
+
+  .card-body{
+    width:17rem;
+    // margin-top:-100px;
+    margin-left:-60px;
+    background-color:white;
+  }
+
+  .other-pools-title{
+    margin-left:-45px;
+  }
 }
 
+//  media q.
+@media screen and (max-width: 1024px){
+
+}
+
+
+
+@media screen and (max-width: 960px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+@media screen and (max-width: 613px) {
+
+}
+
+@media screen and (max-width: 500px) {
+
+}
+
+@media screen and (max-width: 420px){
+
+}
+
+
+@media screen and (max-width: 375px) {
+  .wrapper-show{
+    display:flex;
+    flex-direction: column;
+  }
+  .traits-image img {
+    height: 211px;
+    width: 315px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-left: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  }
+  .pool-description{
+    margin-left:10%;
+  }
+}
