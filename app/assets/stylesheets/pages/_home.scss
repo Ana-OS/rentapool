@@ -251,7 +251,7 @@
   .card-product {
     overflow: hidden;
     height: 120px;
-    width:500px;
+    width:470px;
     margin:0 auto;
   }
   .card-product img {
@@ -292,6 +292,34 @@
 }
 
 @media screen and (max-width: 375px) {
+  .product-search{
+    width:400px;
+  }
+  .card-product {
+    overflow: hidden;
+    height: 90px;
+    width:340px;
+    margin:0 -15px;
+
+    img {
+      height: 100%;
+      width: 130px;
+      object-fit: cover;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 1;
+      opacity: .7;
+      margin-bottom: 0;
+      margin-top: 3px;
+    }
+  }
 
 }
 
