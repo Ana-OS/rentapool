@@ -5,7 +5,17 @@
 .home {
   margin-top: -30px;
 }
+.wrapper-pools{
+  width:100vw;
+  display:flex;
+  flex-direction: row;
+  transition: ease all .4s;
 
+
+  #map{
+    margin-right:10px;
+  }
+}
 .banner {
   background-size: cover;
   background-position: center;
@@ -116,7 +126,7 @@
 .card-trip h2 {
   font-size: 16px;
   font-weight: bold;
-  margin: 0;
+  margin-top: 0;
 }
 
 .card-trip p {
@@ -183,5 +193,101 @@
     background-color: #5CA08B;
     transition: background-color 0.8s ease;
 }
+
+
+
+// media queries
+
+@media screen and (max-width: 1024px) {
+  .card-product {
+    overflow: hidden;
+    height: 160px;
+    width:790px;
+    margin:7% 22%;
+  }
+  .wrapper-pools{
+    width:100vw;
+    display: flex;
+    flex-direction:column;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  .card-product {
+    overflow: hidden;
+    height: 130px;
+    width:630px;
+  }
+  .card-product img {
+    height: 100%;
+    width: 200px;
+    object-fit: cover;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .card-product {
+    overflow: hidden;
+    height: 130px;
+    width:580px;
+    margin:0 auto;
+  }
+  .card-product img {
+      height: 100%;
+      width: 200px;
+      object-fit: cover;
+  }
+  #map{
+    margin-right:20px;
+  }
+}
+
+@media screen and (max-width: 613px) {
+  .card-product {
+    overflow: hidden;
+    height: 120px;
+    width:500px;
+    margin:0 auto;
+  }
+  .card-product img {
+      height: 100%;
+      width: 170px;
+      object-fit: cover;
+  }
+  #map{
+    margin-right:10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-product {
+    overflow: hidden;
+    height: 150px;
+    width:450px;
+    margin:0 auto;
+  }
+
+  .card-product img {
+    height: 100%;
+    width: 175px;
+    object-fit: cover;
+    transition: ease all .4s;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+}
+
+@media screen and (max-width: 375px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
 
 
