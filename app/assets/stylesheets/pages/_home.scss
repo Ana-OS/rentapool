@@ -11,11 +11,11 @@
   flex-direction: row;
   transition: ease all .4s;
 
-
   #map{
     margin-right:10px;
   }
 }
+
 .banner {
   background-size: cover;
   background-position: center;
@@ -151,7 +151,6 @@
   width: 40px;
 }
 
-
 .product-search {
     display: flex;
     width:500px;
@@ -199,6 +198,7 @@
 // media queries
 
 @media screen and (max-width: 1024px) {
+
   .card-product {
     overflow: hidden;
     height: 160px;
@@ -245,6 +245,9 @@
 }
 
 @media screen and (max-width: 613px) {
+  .product-search{
+    width:400px;
+  }
   .card-product {
     overflow: hidden;
     height: 120px;
@@ -262,6 +265,10 @@
 }
 
 @media screen and (max-width: 500px) {
+  .product-search{
+    width:300px;
+  }
+
   .card-product {
     overflow: hidden;
     height: 150px;
@@ -278,6 +285,9 @@
 }
 
 @media screen and (max-width: 420px) {
+  .product-search{
+    width:270px;
+  }
 
 }
 
