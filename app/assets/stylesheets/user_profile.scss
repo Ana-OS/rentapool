@@ -1,3 +1,15 @@
+.user_container{
+  position:relative;
+  top:10px;
+  width:1150px;
+  height:550px;
+  margin:0 auto;
+  border: 0.4px solid rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  overflow:hidden;
+}
+
+
 .user{
   position:relative;
   top:10px;
@@ -49,5 +61,24 @@ h1{
   color:white;
 }
 
+  // media q
 
+@media screen and (max-width: 960px) {
+  .user_info{
+    margin-left:20px;
+    margin-top:30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .user_info{
+    margin-left:10px;
+    margin-top:30px;
 
+    p{
+      color:#808080;
+      font-size:18px;
+      font-weight:300;
+      font-family:Roboto;
+    }
+  }
+}

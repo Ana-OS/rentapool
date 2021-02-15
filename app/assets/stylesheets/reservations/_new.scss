@@ -52,3 +52,10 @@
   color: $gray;
 }
 
+@media screen and (max-width: 500px) {
+
+ .new-reservation-btn {
+    width:200px;
+  }
+}
+

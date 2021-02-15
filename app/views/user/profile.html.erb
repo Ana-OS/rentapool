@@ -1,4 +1,4 @@
-<div class="trait_user_container" style="background-color:#F3FBFC">
+<div class="user_container col-lg-8 col-sm-6" style="background-color:#F3FBFC">
 <div class="back-button-index mt-3 ml-3">
         <%= link_to :back do %>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -16,7 +16,7 @@
     <p class="mb-2">First Name</p><div class="mb-3 info"><%= current_user.first_name.capitalize %></div>
     <p>Last Name</p><div class=" mb-3 info"><%= current_user.last_name.capitalize %></div>
     <p>Email</p><div class="info mb-3"><%= current_user.email %></div>
-    <div class="text-center">
+    <div class="text-center mb-5">
       <div class="btn btn-outline-info">
           <%= link_to "Edit Profile",  edit_user_registration_path %>
       </div>

@@ -72,21 +72,10 @@
   font-weight: bold;
   }
 
-
-  .card-img-top{
-    width:17rem;
-    margin-left:-60px;
-  }
-
-  .card-body{
-    width:17rem;
-    // margin-top:-100px;
-    margin-left:-60px;
-    background-color:white;
-  }
-
-  .other-pools-title{
-    margin-left:-45px;
+  .other-pools-wrapper{
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
   }
 }
 
@@ -99,25 +88,94 @@
 
 @media screen and (max-width: 960px) {
 
+  .traits-image img {
+    border:1px solid red;
+    height: 311px;
+    width: 415px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-left: 5%;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  }
+  .pool-description{
+    border:1px solid red;
+    text-align:center;
+    // margin-left:10%;
+  }
+
+   .book-trait-button{
+    margin:0 auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
+   .wrapper-show{
+    display:flex;
+    flex-direction: column;
+  }
+  .traits-image img {
+    height: 311px;
+    width: 415px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-left: 5%;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  }
+  .pool-description{
+    border:1px solid red;
+    text-align:center;
+    // margin-left:10%;
+  }
+
+   .book-trait-button{
+    margin:0 auto;
+  }
 
 }
 
 
 @media screen and (max-width: 613px) {
-
+  .wrapper-show{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+  }
+  .traits-image img {
+    height: 311px;
+    width: 415px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-left: 10%;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  }
+  .pool-description{
+    text-align:center;
+    // margin-left:10%;
+  }
+  .book-trait-button{
+    margin:0 auto;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  .wrapper-show{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .traits-image img {
+    height: 211px;
+    width: 315px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-left: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  }
+  .pool-description{
+    margin-left:10%;
+  }
 
 }
-
-@media screen and (max-width: 420px){
-
-}
-
 
 @media screen and (max-width: 375px) {
   .wrapper-show{
@@ -134,5 +192,18 @@
   }
   .pool-description{
     margin-left:10%;
+  }
+  .book-trait-button{
+    margin:0 8%;
+  }
+  .card-body{
+    width:17rem;
+    // margin-top:-100px;
+    margin-left:-60px;
+    background-color:white;
+  }
+
+  .other-pools-title{
+    margin-left:-45px;
   }
 }

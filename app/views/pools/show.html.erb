@@ -9,8 +9,7 @@
       </div>
       <div class="book-trait-button">
         <button type="button" class="btn book-trait btn-lg">
-          <%= link_to "Book this poo
-          l", new_pool_booking_path(@pool) %>
+          <%= link_to "Book this pool", new_pool_booking_path(@pool) %>
         </button>
       </div>
     <!-- link to edit , delete, back to traits list -->
@@ -22,15 +21,15 @@
     <% end %>
   </div>
 </div>
-  <div class="container col-12" style="background-color:#F3FBFC">
-    <div class="container-fluid col-7 text-center">
+  <div class="container col-12  justify-content-center" style="background-color:#F3FBFC">
+    <div class="container-fluid col-8 text-center other-pools-wrapper">
       <h2 class="other-pools-title">Check other pools</h2>
-      <div class="row mx-auto mt-5">
+      <div class="row mx-auto mt-5 ml-5 justify-content-center">
         <% @pools.sample(3).each do |pool| %>
           <% if pool.photo.attached? %>
-            <div class="card ml-1 mb-3" style="width: 15rem;">
+            <div class="card ml-4 mb-3" style="width: 15rem">
                <%= link_to pool_path(pool) do %>
-                <img class="card-img-top" style="height:200px;"src="<%= cl_image_path pool.photo.key%>">
+                <img class="card-img-top" style="height:200px"src="<%= cl_image_path pool.photo.key%>">
                 <div class="card-body">
                   <h5><%= pool.name%></h5>
                   <p class="card-text"><%= pool.address %><span class="ml-5 mt-3"><%= pool.price_hour %> p/day €</span></p>

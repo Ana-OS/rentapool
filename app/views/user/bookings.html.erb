@@ -1,5 +1,5 @@
 <div style="background-image:linear-gradient(rgba(0,150,250,0.1),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dhjbcdzxb/image/upload/v1611606710/unsplashpool2_z7foy8.jpg); height:270vh">
-  <div class="trait_user_container col-7"style=" background-color:white; height:300vh" >
+  <div class="trait_user_container col-lg-7 col-sm-10"style=" background-color:white; height:300vh" >
     <div class="back-button-index mt-3 ml-3">
       <%= link_to :back do %>
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -20,16 +20,20 @@
           <div class="card-product-infos">
         <%end%>
           <h2><%= booking.pool.name.capitalize %></h2>
-          <div class="d-flex ml-3 mt-3">
-            <p>From:<span class="mr-4"><%= booking.start_date%></span></p>
-            <p>To:<span><%= booking.end_date %></span></p>
-          </div>
-          <div class="d-flex ml-2 mt-5">
-            <div class="edit_green_btn ml-5">
-              <%= link_to "Edit",  edit_pool_booking_path(booking.pool, booking) %>
+          <div class="booking-date">
+            <div class="d-flex ml-3 mt-3">
+              <p>From:<span class="mr-4"><%= booking.start_date%></span></p>
+              <p>To:<span><%= booking.end_date %></span></p>
             </div>
-            <div class="delete_coral_btn ml-5">
-             <%= link_to "Delete", booking_path(booking), method: :delete, data: {confirm: "are you sure?"}%>
+          </div>
+          <div class="booking-btns" >
+            <div class="d-flex ml-2 mt-5">
+              <div class="edit_green_btn ml-5">
+                <%= link_to "Edit",  edit_pool_booking_path(booking.pool, booking) %>
+              </div>
+              <div class="delete_coral_btn ml-5">
+               <%= link_to "Delete", booking_path(booking), method: :delete, data: {confirm: "are you sure?"}%>
+              </div>
             </div>
           </div>
         </div>
