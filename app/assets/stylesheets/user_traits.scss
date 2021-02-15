@@ -130,5 +130,42 @@
 }
 
 
+// media q.
 
+@media screen and (max-width: 1024px) {
+  .card-product{
+    width:600px;
+    height:140px;
+
+    img{
+      width:200px;
+    }
+  }
+  .card-product-infos {
+    h2{
+      margin-top:0;
+      margin-left:0;
+
+    }
+    .description{
+      width:350px;
+      margin-left:0;
+      margin-top:-10px;
+      p{
+        margin-top:-10px;
+      }
+    }
+
+    .pool-price {
+      width:350px;
+      margin-top:-40px;
+      margin-left:0;
+      font-weight:bold;
+    }
+
+    .pool-btns{
+      margin-left:-50px;
+    }
+  }
+}
 

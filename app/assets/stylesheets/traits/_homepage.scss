@@ -89,16 +89,16 @@
 @media screen and (max-width: 960px) {
 
   .traits-image img {
-    border:1px solid red;
-    height: 311px;
-    width: 415px;
+    // border:1px solid red;
+    height: 411px;
+    width: 515px;
     object-fit: cover;
     border-radius: 15px;
     margin-left: 5%;
     box-shadow: 0 0 8px rgba(0,0,0,0.2);
   }
   .pool-description{
-    border:1px solid red;
+    // border:1px solid red;
     text-align:center;
     // margin-left:10%;
   }
@@ -114,15 +114,15 @@
     flex-direction: column;
   }
   .traits-image img {
-    height: 311px;
-    width: 415px;
+    height: 411px;
+    width: 515px;
     object-fit: cover;
     border-radius: 15px;
     margin-left: 5%;
     box-shadow: 0 0 8px rgba(0,0,0,0.2);
   }
   .pool-description{
-    border:1px solid red;
+    // border:1px solid red;
     text-align:center;
     // margin-left:10%;
   }
@@ -196,14 +196,21 @@
   .book-trait-button{
     margin:0 8%;
   }
-  .card-body{
-    width:17rem;
-    // margin-top:-100px;
-    margin-left:-60px;
-    background-color:white;
-  }
-
   .other-pools-title{
     margin-left:-45px;
+  }
+  .card-product{
+    width:350px;
+    height:100px;
+
+    img{
+      width:150px;
+    }
+  }
+  .card-text{
+    display:none;
+  }
+  .card-body h5{
+    font-size:20px;
   }
 }

@@ -1,180 +1,174 @@
+.trait_user_container{
+  position:relative;
+  top:10px;
+  width:1150px;
+  height:520px;
+  margin:0 auto;
+  border-top: 0.4px solid rgba(0, 0, 0, 0.25);
+  border-right: 0.4px solid rgba(0, 0, 0, 0.25);
+  border-left: 0.4px solid rgba(0, 0, 0, 0.25);
+  border-radius: 11px 11px 11px 0;
+  overflow:hidden;
+}
+
+.cards{
+  margin-top:-420px;
+  margin-left:150px;
+  justify-content:space-between;
+}
+.card_user_trait {
+  position:relative;
+  overflow: hidden;
+  height: 180px;
+  background: white;
+  box-shadow: 0 0 7px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  width:580px;
+  border-radius:10px;
+}
+
+.card_user_trait img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card_user_trait h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: -20px;
+}
+
+.card_user_trait p {
+  font-size: 12px;
+  line-height: 1;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card_user_trait .card_user_trait_infos {
+  margin-top:-20px;
+  margin-left:20px;
+  padding: 16px;
+  width:400px;
+  text-align: justify;
+  text-justify: inter-word;
+
+  .trait_description{
+    font-size:13px;
+    width:450px;
+    text-align: justify;
+    text-justify: inter-word;
+    letter-spacing:-.7px;
+    margin-left:-30px;
+  }
+}
+
+.trait_btns{
+  position:absolute;
+  margin-left:-60px;
+  bottom:10px;
+}
+
+.back_yellow_btn{
+  border: 2px solid #F9CF59;
+  width: 70px;
+  height: 29px;
+  margin-top:10px;
+  border-radius: 5px;
+  text-align:center;
+}
+
+.back_yellow_btn a{
+  color: #F9CF59;
+  text-decoration:none;
+}
+
+.back_yellow_btn a:hover{
+  color: #F9CF59;
+  text-decoration:none;
+}
+
+.edit_green_btn{
+  border: 2px solid #5C9468;
+  width: 70px;
+  height: 29px;
+  margin-top:10px;
+  border-radius: 5px;
+  text-align:center;
+}
+
+.edit_green_btn a{
+  color:#5C9468 ;
+  text-decoration:none;
+}
+.edit_green_btn a:hover{
+  color:#5C9468 ;
+  text-decoration:none;
+}
+
+.delete_coral_btn{
+  border: 2px solid #F89D77;
+  width: 70px;
+  height: 29px;
+  margin-top:10px;
+  margin-left:10px;
+  border-radius: 5px;
+  text-align:center;
+}
+
+.delete_coral_btn a{
+  color:#F89D77;
+  text-decoration:none ;
+}
+
+.delete_coral_btn a:hover{
+  color:#F89D77;
+  text-decoration:none ;
+}
 
 
-// media queries
+// media q.
+
 @media screen and (max-width: 1024px) {
   .card-product{
-    width:500px;
-    height:100px;
-
-    h2{
-      font-size:10px;
-    }
+    width:600px;
+    height:140px;
 
     img{
-      width:67%;
+      width:200px;
     }
   }
-
-  .card-product-infos{
-    h2{
-      margin-top:10px;
-      font-size:20px;
-      margin-left:-70px;
-    }
-    .booking-date{
-      margin-left:-100px;
-      margin-bottom:-60px;
-      p{
-        margin-top:-8px;
-        margin-bottom:10px;
-        margin-left:10px;
-      }
-    }
-    .booking-btns{
-      margin-top:40px;
-      margin-left:-50px;
-    }
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .card-product{
-    width:500px;
-    height:100px;
-
-    h2{
-      font-size:10px;
-    }
-
-    img{
-      width:67%;
-    }
-  }
-
-  .card-product-infos{
-    h2{
-      margin-top:10px;
-      font-size:20px;
-      margin-left:-70px;
-    }
-    .booking-date{
-      margin-left:-100px;
-      margin-bottom:-60px;
-      p{
-        margin-top:-8px;
-        margin-bottom:10px;
-        margin-left:10px;
-      }
-    }
-    .booking-btns{
-      margin-top:40px;
-      margin-left:-50px;
-    }
-  }
-}
-
-@media screen and (max-width: 613px) {
-  .card-product{
-    width:450px;
-    height:100px;
-
-    h2{
-      font-size:10px;
-    }
-
-    img{
-      width:67%;
-    }
-  }
-
-  .card-product-infos{
-    h2{
-      margin-top:10px;
-      font-size:20px;
-      margin-left:-70px;
-    }
-    .booking-date{
-      margin-left:-100px;
-      margin-bottom:-60px;
-      p{
-        margin-top:-8px;
-        margin-bottom:10px;
-        margin-left:10px;
-      }
-    }
-    .booking-btns{
-      margin-top:40px;
-      margin-left:-10px;
-    }
-  }
-}
-@media screen and (max-width: 500px) {
-  .card-product{
-    width:400px;
-    height:100px;
-
-    h2{
-      font-size:10px;
-    }
-
-    img{
-      width:75%;
-    }
-  }
-
- .card-product-infos{
+  .card-product-infos {
     h2{
       margin-top:0;
-      font-size:20px;
-      margin-left:-40px;
+      margin-left:0;
+
     }
-    .booking-date{
+    .description{
+      width:350px;
+      margin-left:0;
+      margin-top:-10px;
+      p{
+        margin-top:-10px;
+      }
+    }
+
+    .pool-price {
+      width:350px;
+      margin-top:-40px;
+      margin-left:0;
+      font-weight:bold;
+    }
+
+    .pool-btns{
       margin-left:-50px;
-      margin-bottom:-60px;
-      p{
-        margin-top:-8px;
-        margin-bottom:10px;
-        margin-left:-10px;
-      }
-    }
-    .booking-btns{
-      margin-top:40px;
-      margin-left:-70px;
     }
   }
 }
 
-@media screen and (max-width: 375px) {
-  .card-product{
-    width:340px;
-    height:90px;
 
-    h2{
-      font-size:8px;
-    }
-    img{
-      width:85%;
-    }
-  }
 
- .card-product-infos{
-    h2{
-      margin-top:0;
-      font-size:20px;
-      margin-left:-20px;
-    }
-    .booking-date{
-      margin-left:-30px;
-      margin-bottom:-60px;
-      p{
-        margin-top:-8px;
-        margin-bottom:10px;
-        margin-left:-20px;
-      }
-    }
-    .booking-btns{
-      margin-top:40px;
-      margin-left:-70px;
-    }
-  }
-}
+

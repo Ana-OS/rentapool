@@ -20,15 +20,21 @@
           <div class="card-product-infos">
           <%end%>
             <h2><%=link_to pool.name, pool_path(pool) %></h2>
-            <p class="mt-2"><%= truncate(pool.description, length: 47, separator: ' ') %></p>
-            <p class="mt-1"><%= pool.address %></p>
-            <p class="mt-5"><span class="price"><%= pool.price_hour %>€ p/hour</span></p>
-            <div class="d-flex ml-3">
-              <div class="edit_green_btn ml-5">
-                <%= link_to "Edit",  edit_pool_path(pool) %>
-              </div>
-              <div class="delete_coral_btn ml-5">
-                <%= link_to "Delete", pool_path(pool), method: :delete, data: {confirm: "are you sure?"}%>
+            <div class="description">
+              <p class="mt-2"><%= truncate(pool.description, length: 47, separator: ' ') %></p>
+              <p class="mt-1"><%= pool.address %></p>
+            </div>
+            <div class="pool-price">
+              <p class="mt-5"><span class="price"><%= pool.price_hour %>€ p/hour</span></p>
+            </div>
+            <div class="pool-btns">
+              <div class="d-flex ml-3">
+                <div class="edit_green_btn ml-5">
+                  <%= link_to "Edit",  edit_pool_path(pool) %>
+                </div>
+                <div class="delete_coral_btn ml-5">
+                  <%= link_to "Delete", pool_path(pool), method: :delete, data: {confirm: "are you sure?"}%>
+                </div>
               </div>
             </div>
           </div>
