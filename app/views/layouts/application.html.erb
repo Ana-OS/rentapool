@@ -70,10 +70,10 @@
             <li class="nav-item dropdown mt-1">
               <%= link_to (image_tag "avatar.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false), profile_user_index_path  %>
             </li>
-            <li class="nav-item">
+            <li class="nav-item logout">
               <%= link_to "Log In", new_user_session_path, class: "nav-link" %>
             </li>
-            <li class="nav-item">
+            <li class="nav-item sign-up">
             <%= link_to "Sign Up", new_user_registration_path, class: "nav-link sign-up"  %>
           </li>
           <% end %>
