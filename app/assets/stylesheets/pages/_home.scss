@@ -214,7 +214,7 @@
 
 
 @media screen and (max-width: 960px) {
-  .card-product {
+  .card-product.pool-product {
     overflow: hidden;
     height: 130px;
     width:630px;
@@ -228,7 +228,7 @@
 
 
 @media screen and (max-width: 768px) {
-  .card-product {
+  .card-product.pool-product {
     overflow: hidden;
     height: 130px;
     width:580px;
@@ -248,7 +248,7 @@
   .product-search{
     width:400px;
   }
-  .card-product {
+  .card-product.pool-product {
     overflow: hidden;
     height: 120px;
     width:470px;
@@ -269,24 +269,61 @@
     width:300px;
   }
 
-  .card-product {
+  .card-product.pool-product {
     overflow: hidden;
-    height: 150px;
-    width:450px;
-    margin:0 auto;
-  }
+    height: 90px;
+    width:400px;
+    margin:0 -15px;
 
-  .card-product img {
-    height: 100%;
-    width: 175px;
-    object-fit: cover;
-    transition: ease all .4s;
+    img {
+      height: 100%;
+      width: 130px;
+      object-fit: cover;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 1;
+      opacity: .7;
+      margin-bottom: 0;
+      margin-top: 3px;
+    }
   }
 }
 
 @media screen and (max-width: 420px) {
   .product-search{
     width:270px;
+  }
+  .card-product.pool-product {
+    overflow: hidden;
+    height: 90px;
+    width:340px;
+    margin:0 -15px;
+
+    img {
+      height: 100%;
+      width: 130px;
+      object-fit: cover;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 1;
+      opacity: .7;
+      margin-bottom: 0;
+      margin-top: 3px;
+    }
   }
 
 }
@@ -320,11 +357,39 @@
       margin-top: 3px;
     }
   }
-
 }
 
 @media screen and (max-width: 320px) {
+  .product-search{
+    width:180px;
+    margin-left:20px;
 
+    .search-element{
+      margin-left:-60px;
+    }
+    .search-input{
+      width:110px;
+      margin-left:70px;
+      margin-right:20px;
+
+    }
+  }
+  .card-product.pool-product {
+    overflow: hidden;
+    height: 100px;
+    width:290px;
+    margin:0 -15px;
+    img {
+      border-radius:30%;
+      height: 100%;
+      width: 100px;
+      object-fit: cover;
+    }
+  }
+
+  .banner .cta{
+    top: 500px;
+  }
 }
 
 

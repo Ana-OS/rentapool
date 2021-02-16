@@ -4,7 +4,7 @@
       <% if @pools.count >= 1 %>
         <% @pools.each do |pool| %>
           <% if pool.photo.attached? %>
-            <div class="card-product mb-3">
+            <div class="card-product mb-3 pool-product">
               <%= link_to pool_path(pool) do %>
                 <img src="<%= cl_image_path pool.photo.key %>"/>
                 <div class="card-product-infos">

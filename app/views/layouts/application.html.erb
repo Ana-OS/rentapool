@@ -39,7 +39,7 @@
 
   <body style="margin-top:-40px">
     <nav class="navbar navbar-expand-lg" style="font-family: 'Roboto', sans-serif;">
-      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <div class="navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <!-- shows quurks in navbar when not on the home page -->
           <% if !current_page?(root_path) %>
@@ -57,10 +57,10 @@
                   <%= link_to "Your Pools", pools_user_index_path, class: "dropdown-item" %>
                 </div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item logout">
               <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "nav-link" %>
             </li>
-            <li class="nav-item">
+            <li class="nav-item add-pool">
               <%= link_to "Add Pool", new_pool_path, class: "btn btn-outline-secondary mt-1 "  %>
             </li>
             <li class="nav-item"> <%= link_to "SPLASH", root_path, class: "nav-link home splash" %><li>
